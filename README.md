@@ -73,12 +73,15 @@ corruption seeds for val/test.
 
 * **Dataset:** CubiCasa5K (Kalervo et al., 2019), 5,000 floorplans, official split
   4,200 / 400 / 400 (`train.txt`, `val.txt`, `test.txt`).
+  * Official download (Zenodo, `cubicasa5k.zip`, 5.5 GB): https://zenodo.org/records/2613548
+  * Authors' repository and paper: https://github.com/CubiCasa/CubiCasa5k · https://arxiv.org/abs/1904.01920
 * **Pre-processed cache (shipped in this ZIP):** `cache/cache_{train,val,test}_32.npy` (ink) and
   `cache/cache_{train,val,test}_32_walls.npy` (official wall labels).
   All code runs from these files, so **the 5.5 GB raw dataset is not needed** to train or evaluate.
-* **Raw dataset (only to rebuild the cache):** download CubiCasa5K from Kaggle and unzip it so
-  that `archive/cubicasa5k/cubicasa5k/train.txt` exists. Delete `cache/` and the code
-  rebuilds it (≈3 min).
+* **Raw dataset (only to rebuild the cache):** download `cubicasa5k.zip` from the Zenodo link above
+  and unzip it inside the project so that `dataset/cubicasa5k/train.txt` exists. A Kaggle mirror
+  that unzips to `archive/cubicasa5k/cubicasa5k/train.txt` (the layout we used) also works; the
+  code looks for both. Delete `cache/` and the code rebuilds it (ink labels ≈3 min, wall labels ≈10 s).
 * **GitHub repository (code, preprocessed cache and all best checkpoints):**
   https://github.com/chins6/generative-floorplan-synthesis (public, no sign-in needed).
   Clone it and every command above runs as is:
