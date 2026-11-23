@@ -79,7 +79,10 @@ corruption seeds for val/test.
 * **Raw dataset (only to rebuild the cache):** download CubiCasa5K from Kaggle and unzip it so
   that `archive/cubicasa5k/cubicasa5k/train.txt` exists. Delete `cache/` and the code
   rebuilds it (≈3 min).
-* **Drive / GitHub links:** [FILL: Google Drive or GitHub link to the dataset, cache and checkpoints, shared with the course instructor]
+* **GitHub repository (code, preprocessed cache and all best checkpoints):**
+  https://github.com/chins6/generative-floorplan-synthesis. It is a private repository; the course
+  instructor is given access as a collaborator. Clone it and every command above runs as is.
+  The raw CubiCasa5K dataset is not in the repository (5.5 GB); it is only needed to rebuild the cache.
 
 Wall labels (`--labels walls`): parse every `class="Wall"` polygon of floor 1 in `model.svg`, crop to
 the walls' bounding box, pad to a square (no stretching), fill at 512×512, and reduce to 32×32. A cell is
