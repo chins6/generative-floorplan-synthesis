@@ -80,8 +80,9 @@ corruption seeds for val/test.
   that `archive/cubicasa5k/cubicasa5k/train.txt` exists. Delete `cache/` and the code
   rebuilds it (≈3 min).
 * **GitHub repository (code, preprocessed cache and all best checkpoints):**
-  https://github.com/chins6/generative-floorplan-synthesis. It is a private repository; the course
-  instructor is given access as a collaborator. Clone it and every command above runs as is.
+  https://github.com/chins6/generative-floorplan-synthesis (public, no sign-in needed).
+  Clone it and every command above runs as is:
+  `git clone https://github.com/chins6/generative-floorplan-synthesis.git`
   The raw CubiCasa5K dataset is not in the repository (5.5 GB); it is only needed to rebuild the cache.
 
 Wall labels (`--labels walls`): parse every `class="Wall"` polygon of floor 1 in `model.svg`, crop to
