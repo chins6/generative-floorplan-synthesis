@@ -1,0 +1,29 @@
+# --- environment / caches ---
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+~$*
+
+# --- raw dataset (5.5 GB): download from Kaggle, see README section 2 ---
+archive/
+archive.zip
+dataset/
+
+# --- third-party / course material (not ours to redistribute) ---
+biomimetics-11-00581.pdf
+ijgi-10-00097-v2.pdf
+ML_Project_rubrics.docx
+mid review/ML_Project_rubrics.pdf
+
+# --- build artefacts and scratch ---
+submission/
+submission_new/
+logs/
+tools/eq/
+models/demo/
+models/walls/demo/
+models/walls/cv/
+results/demo/
+results/walls/demo/
+Generative_Floorplan_Project_ORIGINAL.ipynb
